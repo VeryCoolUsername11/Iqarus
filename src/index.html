@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crisis Management</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="section">
+      <h1>Coordination Tasks</h1>
+      <ul id="task-list"></ul>
+      <input type="text" id="task-desc" placeholder="Task description">
+      <input type="text" id="task-status" placeholder="Task status">
+      <input type="text" id="task-assignee" placeholder="Assignee">
+      <button id="add-task-btn">Add Task</button>
+    </div>
+
+    <div class="section">
+      <h1>Secure Messaging</h1>
+      <input type="text" id="message-input" placeholder="Type a message">
+      <button id="send-message-btn">Send</button>
+      <p id="received-message"></p>
+    </div>
+
+    <div class="section">
+      <h1>Aggregated Information</h1>
+      <div id="aggregated-data">
+        <h2>Social Media</h2>
+        <ul id="social-media-list"></ul>
+        <h2>News</h2>
+        <ul id="news-list"></ul>
+        <h2>Direct Communications</h2>
+        <ul id="communications-list"></ul>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #2c2c2c; /* Dark grey background */
+    color: #f4f4f4; /* Light grey text */
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+    justify-content: space-between;
+    margin: 0 20px; /* Margin from the edges of the screen */
+  }
+  
+  .section {
+    flex: 1;
+    max-width: 300px;
+    margin: 0 10px; /* Margin between sections */
+  }
+  
+  #task-list,
+  #aggregated-data {
+    margin-top: 20px;
+  }
+  
+  #aggregated-data h2 {
+    margin-top: 20px;
+  }
+  
+  input, button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  input {
+    background-color: #444; /* Darker input background */
+    color: #fff; /* White text */
+  }
+  
+  button {
+    background-color: #007BFF; /* Blue button */
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #444; /* Darker grey for list items */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #555; /* Border to distinguish list items */
+  }
+  
+  #received-message {
+    margin-top: 10px;
+    padding: 10px;
+    background: #555; /* Slightly lighter grey for received messages */
+    border-radius: 5px;
+    border: 1px solid #666; /* Border to distinguish messages */
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 600px) {
+    .container {
+      flex-direction: column; /* Stack columns vertically on smaller screens */
+      margin: 0; /* Remove horizontal margin for full width */
+    }
+  
+    .section {
+      margin: 10px 0; /* Add margin between sections for full width */
+    }
+  }
+  
